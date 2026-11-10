@@ -1,0 +1,51 @@
+:root {
+    --ink: #101827;
+    --muted: #657084;
+    --paper: #f7f8fa;
+    --accent: #9bf36b;
+    --dark: #0b1220;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero {
+    min-height: 660px;
+    display: grid;
+    grid-template-columns: 1.08fr .92fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: #6e9f50;
+}
+
+.button-primary {
+    background: var(--ink);
+    color: white;
+    padding: 14px 19px;
+    border-radius: 7px;
+}
+
+@media (max-width: 620px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+}
